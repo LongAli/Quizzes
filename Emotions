@@ -1,0 +1,29 @@
+//Inline Functions
+
+function emotions(myString, myFunc) {
+    console.log("I am " + myString + ", " + myFunc(2));
+}
+emotions("happy", function laugh(num) {
+    var ha = "";
+    for (l=1; l<=num;l++) {
+        ha += "ha";
+    }
+    return ha+ "!";
+})
+
+//laugh
+var laugh = function(num){
+    var ha = "";
+    for (l=1; l<=num;l++) {
+        ha += "ha";
+    }
+    return ha+ "!";
+};
+console.log(laugh(10));
+
+//cry
+var cry = function tear() {
+    var tear = "boohoo!";
+    return tear;
+}
+console.log(cry());
